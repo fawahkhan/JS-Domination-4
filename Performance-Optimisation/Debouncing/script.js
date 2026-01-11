@@ -1,4 +1,4 @@
-// Debouncing --- am nhi chahte har action pe kuch ho ... ham chahte hai ki hamare actions ke beech me jab koi specific gap ajaye tb koi action perform ho.
+// Debouncing --- ham nhi chahte har action pe kuch ho ... ham chahte hai ki hamare actions ke beech me jab koi specific gap ajaye tb koi action perform ho.
 
 
 function debounce(fnc , delay){
