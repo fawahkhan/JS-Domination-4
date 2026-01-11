@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: white;
+            background-color: black;
+        }
+
+        h1{
+            text-align: center;
+            padding: 20px;
+        }
+        .container{
+            max-width: 700px;
+            margin: 0 auto ;
+            padding: 20px;
+        }
+        .spacer{
+        height: 600px;    /*to force scroll*/
+        }
+        .lazy-img{
+            display: block;
+            width: 100%;
+            height: auto ;
+            margin: 30px 0;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+
+        
+        .lazy-img.loaded{
+            opacity: 1;
+        }    
+    </style>
+</head>
+<body>
+        <h1>Lazy Loading Images with IntersectionObserver</h1>
+
+        <div class="container">
+         <p>scroll down only when you need to see the images</p>
+         <div class="spacer"></div>
+         <img data-src="img1.jpg" alt="img-1" class="lazy-img">
+         <div class="spacer"></div>
+         <img data-src="img2.jpg" alt="img-2" class="lazy-img">
+         <div class="spacer"></div>
+         <img data-src="img1.jpg" alt="img-1" class="lazy-img">
+         <div class="spacer"></div>
+         <img data-src="img2.jpg" alt="img-2" class="lazy-img">
+        </div>
+
+
+
+
+    <script src="script.js"></script> 
+</body>
+</html>
